@@ -45,10 +45,7 @@ task main()
 
 	{
 		//Forward/Backward movement
-		motor[leftBack] = vexRT[Ch3];
-		motor[leftFront] = vexRT[Ch3];
-		motor[rightBack] = vexRT[Ch2];
-		motor[rightFront] = vexRT[Ch2];
+
 
 		//Raise Elevator, fast
 		if(vexRT[Btn6U] == 1 && vexRT[Btn6D] == 0)//RobotC is a finnicky mistress -.-
@@ -70,6 +67,12 @@ task main()
 			motor[launcherRight] = 70;
 			motor[launcherLeftTwo] = -70;
 			motor[launcherRightTwo] = 70;
+		}
+		else if(vexRT[Ch4] >= 10){
+			motor[leftFront] = vexRT[Ch4];
+			motor[leftBack] = -vexRT[Ch4];
+			motor[rightBack] = vexRT[Ch4];
+			motor[rightFront] = -vexRT[Ch4];
 		}
 		//Medium Launcher Speed
 		else if (vexRT[Btn8R] == 1)
@@ -120,6 +123,10 @@ task main()
 		//Sets elevator to zero and starts the loop over
 		else
 		{
+			motor[leftBack] = vexRT[Ch2];
+			motor[leftFront] = vexRT[Ch2];
+			motor[rightBack] = vexRT[Ch2];
+			motor[rightFront] = vexRT[Ch2];
 			motor[elevator] = 0;
 		}
 	}
