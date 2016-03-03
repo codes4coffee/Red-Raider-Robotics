@@ -74,6 +74,12 @@ task main()
 			motor[rightBack] = vexRT[Ch4];
 			motor[rightFront] = -vexRT[Ch4];
 		}
+		else if(vexRT[Ch4] <= -10){
+			motor[leftFront] = -vexRT[Ch4];
+			motor[leftBack] = vexRT[Ch4];
+			motor[rightBack] = -vexRT[Ch4];
+			motor[rightFront] = vexRT[Ch4];
+		}
 		//Medium Launcher Speed
 		else if (vexRT[Btn8R] == 1)
 		{
