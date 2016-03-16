@@ -63,10 +63,10 @@ task main()
 		//High Launcher Speed
 		else if (vexRT[Btn8U] == 1)
 		{
-			motor[launcherLeft] = -70;
-			motor[launcherRight] = 70;
-			motor[launcherLeftTwo] = -70;
-			motor[launcherRightTwo] = 70;
+			motor[launcherLeft] = -120;
+			motor[launcherRight] = 120;
+			motor[launcherLeftTwo] = -120;
+			motor[launcherRightTwo] = 120;
 		}
 		else if(vexRT[Ch4] >= 10){
 			motor[leftFront] = vexRT[Ch4];
