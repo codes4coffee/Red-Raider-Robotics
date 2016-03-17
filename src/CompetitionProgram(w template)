@@ -1,3 +1,14 @@
+#pragma config(Motor,  port1,           launcherLeftTwo, tmotorVex393HighSpeed_HBridge, openLoop)
+#pragma config(Motor,  port2,           launcherRight, tmotorVex393HighSpeed_MC29, openLoop)
+#pragma config(Motor,  port3,           leftBack,      tmotorVex393HighSpeed_MC29, openLoop)
+#pragma config(Motor,  port4,           leftFront,     tmotorVex393HighSpeed_MC29, openLoop)
+#pragma config(Motor,  port5,           rightFront,    tmotorVex393HighSpeed_MC29, openLoop)
+#pragma config(Motor,  port6,           rightBack,     tmotorVex393HighSpeed_MC29, openLoop)
+#pragma config(Motor,  port7,           elevator,      tmotorVex393HighSpeed_MC29, openLoop)
+#pragma config(Motor,  port8,           launcherLeft,  tmotorVex393HighSpeed_MC29, openLoop)
+#pragma config(Motor,  port9,           intakeWheels,  tmotorVex393HighSpeed_MC29, openLoop)
+#pragma config(Motor,  port10,          launcherRightTwo, tmotorVex393HighSpeed_HBridge, openLoop)
+
 #pragma platform(VEX)
 
 //Competition Control and Duration Settings
