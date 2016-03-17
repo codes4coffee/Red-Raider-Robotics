@@ -34,8 +34,8 @@ task autonomous()
 task main()
 {
 	//Calls autonmous mode for 15000 miliseconds(15 seconds)
-	StartTask(autonomous);
-	wait1Msec(15000);
+	//StartTask(autonomous);
+	//wait1Msec(15000);
 	bool	primaryloop = true;
 	bool intake = false;
 
